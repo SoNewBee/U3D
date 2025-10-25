@@ -145,7 +145,7 @@ function HandleAmbientSliderChanged(eventType, eventData)
 end
 
 function SetupViewport()
-    renderer.hdrRendering = true
+    renderer:SetHDRRendering(true)
 
     -- Set up a viewport to the Renderer subsystem so that the 3D scene can be seen
     local viewport = Viewport:new(scene_, cameraNode:GetComponent("Camera"))
